@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100vh;
+  margin-left: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timeline-item-date {
+  text-align: right;
+  margin-right: 10px;
+  color: #888;
+  white-space: nowrap; /* Prevent wrapping */
+  font-size: 0.9em; /* Adjust font size if needed */
+}
+
+.timeline-item-line {
+  width: 2px;
+  height: 50px;
+  background-color: #ddd;
+  margin-right: 10px;
+  background-image: linear-gradient(to bottom, transparent 50%, #ddd 50%);
+  background-size: 100% 4px;
+}
+
+.timeline-item-content {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
